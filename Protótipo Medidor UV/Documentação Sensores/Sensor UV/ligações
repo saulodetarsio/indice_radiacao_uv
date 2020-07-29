@@ -1,0 +1,21 @@
+Ligações:
+
+Para realizar o teste do sensor de radição UV, utilizamos o arduino, um display LCD 16x2, um potenciômetro para ajuste de contraste do display e uma protoboard para auxiliar as conexões. 
+
+
+- Primeiro, conectamos jumpers de alimentação do arduino à protoboard. Padronizamos as linhas de alimentação com os condutores de cores em vermelho (5V) e preto (GND).
+
+- Logo após, o sensor UV foi conectado à protobord e as conexões de alimentação foram devidamente feitas. O pino de saída de dados do sensor foi devidamente conectado à porta A0 do arduino, pois tal sinal de saída é de natureza analógica. No esquema, a linha de condução do sinal de dados do sensor UV está representada em verde. 
+
+- O display foi conectado à protoboard. Podemos ver que nem todos os pinos do display são utilizados, pois só alguns deles são necessários para a exibição das informações. Os dois primeiros pinos são equivalentes à sua alimentação. O terceiro pino está relacionado com o seu ajuste de contraste. Os pinos 4, 6, 11, 12, 13 e 14 do display precisam estar conectados ao arduino e pode ser visto que eles foram conectados ao pinos digitais 7, 6, 5, 4, 3 e 2, respectivamente, no arduino. Será necessário informar esses pinos para a biblioteca do display funcionar corretamente. Isso será visto quando formos realizar a programação para este equema. O pino 5 precisa estar conectado ao GND. Os dois ultimos pinos do display são para a alimentar o LED que há no display.
+
+- Em seguida, fizemos a conexão do potenciômetro na protoboad. Seus terminais de alimentação foram devidamente conectados e o sinal elétrico provindo desse dispositivo foi conectado ao pino de ajuste de contraste do display, pino 3. Essa conexão está representada pelo condutor em azul que vai até o display.
+
+
+OBSERVAÇÃO: 
+
+	- As conexões aqui feitas podem variar, pois presume-se que há uma inifinidade de tipos de sensores UV, potenciômetros e displays.
+
+	- Verificar sempre os pinos e suas respectivas funções no datasheet do periférico.
+
+	- Esses esquemáticos são bem úteis quando formos programar, pois há um mapeamento direto entre os pinos e sinais que devemos operar, facilitando o desenvolvimento do código.

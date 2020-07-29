@@ -1,0 +1,231 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E6764F1
+P 3870 2665
+F 0 "J1" H 3978 2846 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3978 2755 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3870 2665 50  0001 C CNN
+F 3 "~" H 3870 2665 50  0001 C CNN
+	1    3870 2665
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J7
+U 1 1 5E679304
+P 6350 3080
+F 0 "J7" V 6485 3040 50  0000 L CNN
+F 1 "Conn_01x03_Female" V 6405 2705 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6350 3080 50  0001 C CNN
+F 3 "~" H 6350 3080 50  0001 C CNN
+	1    6350 3080
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J5
+U 1 1 5E67C9CF
+P 6390 2220
+F 0 "J5" V 6515 2265 50  0000 R CNN
+F 1 "Conn_01x04_Female" V 6440 2505 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6390 2220 50  0001 C CNN
+F 3 "~" H 6390 2220 50  0001 C CNN
+	1    6390 2220
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J6
+U 1 1 5E67EA9E
+P 6160 3930
+F 0 "J6" V 6285 3970 50  0000 R CNN
+F 1 "Conn_01x06_Female" V 6205 4265 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6160 3930 50  0001 C CNN
+F 3 "~" H 6160 3930 50  0001 C CNN
+	1    6160 3930
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male SCL_SDA
+U 1 1 5E64341A
+P 3880 4045
+F 0 "SCL_SDA" H 3988 4226 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3988 4135 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3880 4045 50  0001 C CNN
+F 3 "~" H 3880 4045 50  0001 C CNN
+	1    3880 4045
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male TEMPERATURA_INDICEUV
+U 1 1 5E64B07B
+P 3935 3415
+F 0 "TEMPERATURA_INDICEUV" H 4043 3596 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4043 3505 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3935 3415 50  0001 C CNN
+F 3 "~" H 3935 3415 50  0001 C CNN
+	1    3935 3415
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0101
+U 1 1 5E64D434
+P 4200 2910
+F 0 "#PWR0101" H 4200 2660 50  0001 C CNN
+F 1 "Earth" H 4200 2760 50  0001 C CNN
+F 2 "" H 4200 2910 50  0001 C CNN
+F 3 "~" H 4200 2910 50  0001 C CNN
+	1    4200 2910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2910 4200 2765
+Wire Wire Line
+	4200 2765 4070 2765
+Text Label 4455 2640 0    50   ~ 0
+ALIMENTACAO_5V
+Wire Wire Line
+	4070 2665 4395 2665
+Wire Wire Line
+	4395 2665 4395 2640
+Wire Wire Line
+	4395 2640 4455 2640
+Text Label 6035 2625 2    50   ~ 0
+ALIMENTACAO_5V
+Wire Wire Line
+	6290 2420 6290 2625
+Wire Wire Line
+	6290 2625 6035 2625
+NoConn ~ 6390 2420
+Text Label 6390 2800 2    50   ~ 0
+SINAL_TEMPERATURA
+Wire Wire Line
+	6490 2420 6490 2800
+Wire Wire Line
+	6490 2800 6390 2800
+$Comp
+L power:Earth #PWR0102
+U 1 1 5E6510B3
+P 6705 2540
+F 0 "#PWR0102" H 6705 2290 50  0001 C CNN
+F 1 "Earth" H 6705 2390 50  0001 C CNN
+F 2 "" H 6705 2540 50  0001 C CNN
+F 3 "~" H 6705 2540 50  0001 C CNN
+	1    6705 2540
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6590 2420 6590 2480
+Wire Wire Line
+	6590 2480 6705 2480
+Wire Wire Line
+	6705 2480 6705 2540
+Text Label 6060 3410 2    50   ~ 0
+ALIMENTACAO_5V
+Wire Wire Line
+	6250 3280 6250 3410
+Wire Wire Line
+	6250 3410 6060 3410
+Text Label 6160 3545 2    50   ~ 0
+SINAL_INDICE_UV
+Wire Wire Line
+	6350 3280 6350 3545
+Wire Wire Line
+	6350 3545 6160 3545
+$Comp
+L power:Earth #PWR0103
+U 1 1 5E652868
+P 6605 3425
+F 0 "#PWR0103" H 6605 3175 50  0001 C CNN
+F 1 "Earth" H 6605 3275 50  0001 C CNN
+F 2 "" H 6605 3425 50  0001 C CNN
+F 3 "~" H 6605 3425 50  0001 C CNN
+	1    6605 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3280 6450 3360
+Wire Wire Line
+	6450 3360 6605 3360
+Wire Wire Line
+	6605 3360 6605 3425
+Text Label 4580 4020 0    50   ~ 0
+SINAL_SDA
+Text Label 4580 4140 0    50   ~ 0
+SINAL_SCL
+Wire Wire Line
+	4080 4045 4450 4045
+Wire Wire Line
+	4450 4045 4450 4020
+Wire Wire Line
+	4450 4020 4580 4020
+Wire Wire Line
+	4580 4145 4580 4140
+Wire Wire Line
+	4080 4145 4580 4145
+$Comp
+L power:Earth #PWR0104
+U 1 1 5E6550C8
+P 5900 4195
+F 0 "#PWR0104" H 5900 3945 50  0001 C CNN
+F 1 "Earth" H 5900 4045 50  0001 C CNN
+F 2 "" H 5900 4195 50  0001 C CNN
+F 3 "~" H 5900 4195 50  0001 C CNN
+	1    5900 4195
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4195 5900 4165
+Wire Wire Line
+	5900 4165 5960 4165
+Wire Wire Line
+	5960 4165 5960 4130
+Text Label 5975 4415 2    50   ~ 0
+ALIMENTACAO_5V
+Wire Wire Line
+	6060 4130 6060 4415
+Wire Wire Line
+	6060 4415 5975 4415
+Text Label 5980 4545 2    50   ~ 0
+SINAL_SDA
+Wire Wire Line
+	6160 4130 6160 4545
+Wire Wire Line
+	6160 4545 5980 4545
+Text Label 5975 4695 2    50   ~ 0
+SINAL_SCL
+Wire Wire Line
+	6260 4130 6260 4695
+Wire Wire Line
+	6260 4695 5975 4695
+NoConn ~ 6360 4130
+NoConn ~ 6460 4130
+Text Label 4475 3390 0    50   ~ 0
+SINAL_INDICE_UV
+Text Label 4480 3495 0    50   ~ 0
+SINAL_TEMPERATURA
+Wire Wire Line
+	4135 3415 4410 3415
+Wire Wire Line
+	4410 3415 4410 3390
+Wire Wire Line
+	4410 3390 4475 3390
+Wire Wire Line
+	4135 3515 4405 3515
+Wire Wire Line
+	4405 3515 4405 3495
+Wire Wire Line
+	4405 3495 4480 3495
+$EndSCHEMATC

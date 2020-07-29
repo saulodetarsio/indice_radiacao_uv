@@ -1,0 +1,5 @@
+\babel@toc {brazil}{}
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
+\beamer@sectionintoc {2}{O índice de radiação ultravioleta}{9}{0}{2}
+\beamer@sectionintoc {3}{O protótipo}{13}{0}{3}
+\beamer@sectionintoc {4}{Conclusões}{20}{0}{4}
